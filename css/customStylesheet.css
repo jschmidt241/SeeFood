@@ -1,5 +1,11 @@
-.custom {
-    width: 100%;
-    text-align: center;
-    align-items: center;
+.spartan {
+    font-family: 'Spartan', sans-serif;
+}
+
+.bottom_space {
+    padding-bottom: 5em;
+}
+
+.top_space {
+    padding-top: 2em;
 }

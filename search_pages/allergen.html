@@ -2,22 +2,55 @@
 
 <html>
     <head>
-        <title>Allergen Search</title>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
         <!-- Latest compiled and minified JavaScript -->
         
-        <link rel="stylesheet" href="css/customStylesheet.css">
-
-        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/customStylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </head>
-    
     <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../main.html">SeeFood</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../main.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Search</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item spartan" href="keyword.html">Keyword Search</a>
+                  <a class="dropdown-item spartan" href="allergen.html">Allergen Search</a>
+                  <a class="dropdown-item spartan" href="location.html">Location Search</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../product_info.html">Product Info</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
         <div class="container">
-            <a class="btn btn-dark" href="../search.html" role="button">Back</a>
-            <h1>Allergen Search</h1>
+                <a class="btn btn-dark" href="../search.html" role="button">Back</a>
+                <h1>Allergen Search</h1>
         </div>
     </body>
 </html>
