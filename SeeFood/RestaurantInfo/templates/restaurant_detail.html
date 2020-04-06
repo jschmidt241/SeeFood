@@ -1,0 +1,18 @@
+{% extends 'navigation/templates/index.html' %}
+
+{%block content%}
+	<h1>{{restaurant.name}}</h1>
+	<ul>
+		<li>Type: {{restaurant.restaurant_type}}</li>
+		<li>Restaurant Description: {{restaurant.description}}</li>
+		<li>SeeFood Rating: {{restaurant.seefood_rating}}</li>
+	</ul>
+	<img class="rounded-circle thumbnail" src="{{restaurant.picture.url}}">
+	
+	<h3>Menu</h3>
+	<ul>
+	{% for food in restaurant.fooditem_set.all%}
+		<li><a href="{% url 'food-detail' food.pk %}">{{food.name}}</li>
+	{%endfor%}
+	</ul>
+	{%endblock%}

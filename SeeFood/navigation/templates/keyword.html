@@ -69,7 +69,7 @@
         {%if restaurant_list %}
         <ul>
           {%for restaurant in restaurant_list%}
-          <li>{{restaurant.name}}</li>
+          <li><a href="{% url 'res-detail' restaurant.pk%}">{{restaurant.name}}</a></li>
           {%endfor%}  
         </ul>
           

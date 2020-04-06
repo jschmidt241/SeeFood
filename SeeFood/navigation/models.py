@@ -8,6 +8,7 @@ class Restaurant(models.Model):
 	restaurant_type = models.CharField(choices = res_type, default = 'NA', max_length = 2)
 	description = models.TextField(max_length = 10000, default = 'A SeeFood restaurant')
 	seefood_rating = models.DecimalField(max_digits = 3,decimal_places = 1, help_text = 'the rating uniquely given by SeeFood', default = 5)
+	picture = models.ImageField(default = "default.jpg",upload_to = "restaurant_pics")
 	class Meta:
 		ordering = ["name"]
 

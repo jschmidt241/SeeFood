@@ -1,0 +1,14 @@
+{% extends 'navigation/templates/index.html' %}
+
+{%block content%}
+	<h1>{{fooditem.name}}</h1>
+	<ul>
+		<li>{{fooditem.generic_name}}</li>
+		<li class="{% if fooditem.classicifcation == 'VE'%}text-success{%elif fooditem.classicifcation == 'GF'%} text-secondary {%else%}text-info{%endif%}">{{fooditem.classification}}</li>
+		<li class="{% if fooditem.allergen.name == 'Soy'%}text-success{%elif fooditem.classicifcation == 'Fish'%} text-info {%else%}text-secondary{%endif%}">
+		{%for a in fooditem.allergen.all%}
+		<p>{{a.name}}</p>
+		{%endfor%}
+		</li>
+	</ul>
+{%endblock%}
