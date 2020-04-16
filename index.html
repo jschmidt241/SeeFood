@@ -2,7 +2,6 @@
 
 <html>
   <head>
-    {% block head %}
     <link rel="icon" href="images/seefoodicontransparent.png">
     <title>SeeFood</title>
 
@@ -18,11 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    {% endblock head %}
   </head>
     
     <body>
-    {% block navbar %}
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="images/seefoodlogotransparentsmall.png" title="SeeFoodLogo" alt="SeeFood" height="45px" width = "90px" class="img-responsive"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
@@ -49,19 +46,18 @@
               <a class="nav-link" href="settings.html">Settings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="product_info.html">Product Info</a>
+              <a class="nav-link" href="product_info.html">About Us</a>
             </li>
           </ul>
         </div>
     </nav>
-    {% endblock navbar %}
 
       <div class="jumbotron text-center jumbotron-fluid">
         <h1 class="spartan">SeeFood</h1>
         <p class="spartan">The centralized restaurant menu app you've always wanted.</p>
         <p class="spartan bottom_space">Find exactly the food you're looking for by searching our database of nutrition facts, potential allergens, and images of menu items.</p>
         <div class="col-sm-12 d-flex justify-content-center">
-            <a class="btn btn-seefood spartan" href="search.html" role="button">Get Started</a>
+            <a class="btn btn-seefood spartan font-weight-bold" href="search.html" role="button">Get Started</a>
         </div>
       </div>
             
@@ -78,7 +74,7 @@
                 </div>
                 <div class="col-xs-0 col-sm-2"></div>
                 <div class="col-sm-12 d-flex justify-content-center">
-                        <a class="btn btn-seefood spartan" href="profile.html" role="button">Profile</a>
+                        <a class="btn btn-seefood spartan font-weight-bold" href="profile.html" role="button">Profile</a>
                 </div>
                 
             </div>
@@ -99,7 +95,7 @@
               </div>
               <div class="col-xs-0 col-sm-2"></div>
               <div class="col-sm-12 d-flex justify-content-center">
-                      <a class="btn btn-seefood spartan" href="product_info.html" role="button">Check Us Out</a>
+                      <a class="btn btn-seefood spartan font-weight-bold" href="product_info.html" role="button">Check Us Out</a>
               </div>              
 
         </div>
@@ -124,13 +120,13 @@
             <a href="#!">Facebook</a>
           </li>
           <li>
-            <a href="#!">Instagram</a>
+            <a href="https://www.instagram.com/seefoodco/">Instagram</a>
           </li>
           <li>
             <a href="#!">Twitter</a>
           </li>
           <li>
-            <a href="#!">Email</a>
+            <a href="mailto:">Email</a>
           </li>
         </ul>
 

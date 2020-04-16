@@ -3,7 +3,7 @@
 <html>
   <head>
     <link rel="icon" href="../images/seefoodicontransparent.png">
-  
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Search</a>
@@ -51,9 +51,42 @@
         </div>
     </nav>
 
-        <div class="container">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <div class="col-sm-12">
+        <div class="d-flex justify-content-center">
+          <h1 class="spartan">Search By Allergen</h1>
           <br>
-          <h1>Allergen Search</h1>
         </div>
+      </div>
+      <br>
+      <br>
+      <div class="col-sm-12">
+        <form action="" method="post">
+          <!--{% csrf_token %}-->
+          <table>
+          <p class="spartan"><label for="id_keyword">Search By Allergen:</label>
+            <input id="id_allergen" type="text" name="allergen" maxlength="100"></p>
+          </table>
+          <input type="submit" value="Search" class="btn-seefood" style="color:#252525; font-weight: bold;">
+        </form>
+      </div>
+    </div>
+    
+    <br>
+    <!--{%if restaurant_list %}-->
+    <div class="col-sm-12">
+      <ul class="spartan">
+        <!--{%for restaurant in restaurant_list%}-->
+        <li><a href="{% url 'res-detail' restaurant.pk%}"><!--{{restaurant.name}}--></a>Test</li>
+        <!--{%endfor%}-->  
+      </ul>
+    </div>
+      
+    <!--{%endif%}-->
+    
     </body>
+      <!--{%endblock%}-->
 </html>

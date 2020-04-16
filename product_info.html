@@ -1,17 +1,148 @@
-{% extends 'index.html' %}
 <!DOCTYPE html>
 
 <html>
   <head>
-    {% block head %}{% endblock %}
+    <link rel="icon" href="images/seefoodicontransparent.png">
+    <title>SeeFood</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/customStylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
   </head>
     <body>
-    {% block navbar %}{% endblock %}
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="images/seefoodlogotransparentsmall.png" title="SeeFoodLogo" alt="SeeFood" height="45px" width = "90px" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+  
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Search</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item spartan" href="search_pages/keyword.html">Keyword Search</a>
+                    <a class="dropdown-item spartan" href="search_pages/allergen.html">Allergen Search</a>
+                    <a class="dropdown-item spartan" href="search_pages/location.html">Location Search</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html">Settings</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="product_info.html">About Us<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+      </nav>
 
     <body>
         <div class="container">
           <br>
-            <h1>Product Info</h1>
+          <br>
+          <br>
+
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+              <h1 class="spartan">Have Confidence In Your Order</h1>
+              <br>
+            </div>
+          </div>
+          <br>
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+              <p class="spartan text-center">SeeFood was created by a group of students from Shoreland Lutheran High School in Kenosha, Wisconsin for our senior year engineering/computer science project. We spent many hours of class time and free time developing this site throughout the year. Our goal is to create a centralized menu site to help people with allergy or nutirition needs, or just for anyone looking to quickly find restaurant menus and see images of different menu items. Instead of being forced to search each individual restaurant website, if they even have one, our service's goal is to quickly compare the many restaurant items with allergen and nutritionial information along with images to help you make the best decision for your order.</p>
+            </div>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center">
+            <img src="images/creators.jpg" class="img-fluid" width="504px" height="672px" alt="The Creators">
+          </div>
+          <br>
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+              <p class="spartan">SeeFood Creators: (left to right) John Schmidt, Ben Barrette, Derek Borchardt, Michael Zhang.</p>
+              
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+              <p class="spartan"><span style="font-weight:bold">Disclaimer:</span> Our information comes directly from the restaurants; however, cross-contamination and errors are always a possibility, and neither we nor the restaurants are responsible for any problems related to mishaps. Menu items and information are subject to change and these changes may not appear in our database immediately. As such, it is very important that each consumer uses their own discretion when ordering to avoid tragic accidents. Our tool is simply that: a tool, and so it should not be regarded as the sole source to inform a decision.</p>              <br>
+            </div>
+          </div>
         </div>
+        <br>
+
+        <footer class="page-footer font-small elegant-color pt-4">
+          <br>
+          <div class="container-fluid text-center text-md-left">
+            <div class="row">
+              <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase spartan">SeeFood</h5>
+                <p class="spartan">Find the foods that make you happy.</p>
+              </div>
+              <hr class="clearfix w-100 d-md-none pb-3">
+              <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase spartan">Social Media</h5>
+                <ul class="list-unstyled spartan">
+                <li>
+                  <a href="#!">Facebook</a>
+                </li>
+                <li>
+                  <a href="#!">Instagram</a>
+                </li>
+                <li>
+                  <a href="#!">Twitter</a>
+                </li>
+                <li>
+                  <a href="#!">Email</a>
+                </li>
+              </ul>
+      
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase spartan">More</h5>
+              <ul class="list-unstyled spartan">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="footer-copyright text-center py-3">© 2020 Copymight:
+          <a href="index.html"> seefoodco.com</a>
+        </div>
+        
+        </footer>
     </body>
 </html>
